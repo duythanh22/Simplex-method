@@ -89,6 +89,7 @@ int main()
         cout << "Bien doi lan 2 : " << endl;
         showPr();
         ++step;
+	++count;
         _iterator();
         cout << endl;
 
