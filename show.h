@@ -162,3 +162,33 @@ void showPr() {
     cout << " x[1]~x[" << x_num << "] >= 0" << endl << endl;;
 }
 
+void outPut() {
+    cout  << "Bang don hinh thu: " << count << endl;
+    cout << "c" << "\t";
+    for ( size_t i=0; i<x_num; ++i ){
+    	cout  << left << setw (10) << c[i] << "\t";	// hien thi he so cac bien ham muc tieu
+	}
+    cout << z << endl;
+
+    cout << " " << "\t";
+    
+    for ( size_t i=0; i<x_num; ++i ) {
+        cout << "x" << i+1 << left << setw (9) << "\t";		// cac bien
+        
+    }
+    cout << "f(x)" << "\t" << endl;
+	
+    for ( size_t i=0; i<st_num; ++i ) {
+        cout << "x[" << base_id[i] << "]\t";	// vecto co so J
+        for( size_t j = 0 ; j < x_num ; ++j ){	// hien thi ma tran
+        	cout  << left << setw (10) << setprecision(3) << a[i][j] << "\t";
+		}
+        cout << b[i] << "\t" << endl;	  //
+    }
+
+    cout << "Delta " << "\t";
+    for (size_t i=0; i<x_num; ++i) {
+        cout  << left << setw (10) << setprecision(3) << sga[i] << "\t" ;
+    }
+    cout << endl;
+}
