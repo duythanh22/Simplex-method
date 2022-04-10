@@ -106,7 +106,7 @@ void normalize() {
         base_id = base_id_;
     }
 
-    cout << "Bai toan dua ve chinh tac: " << endl;
+    cout << "Bai toan dua ve chinh tac (them cac bien phu va bien gia): " << endl;
     if (min_max == 1){
     	cout << "Max z = ";
 	}
